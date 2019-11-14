@@ -1,5 +1,5 @@
 {
-    "name": "frzb/swagger-ui-gen",
+    "name": "php-solution/swagger-ui-gen",
     "type": "component",
     "description": "Extra functionality for generate Swagger specification",
     "license": "MIT",

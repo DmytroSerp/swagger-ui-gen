@@ -40,8 +40,8 @@ class OpenapiNormalizer implements DataNormalizerInterface
     {
         $normalizeConfig = array_filter(
             $config,
-            function ($value, $key) {
-                return !is_null($value) && in_array($key, self::PROPERTIES);
+            static function ($value, $key) {
+                return $value !== null && \in_array($key, self::PROPERTIES, true);
             },
             ARRAY_FILTER_USE_BOTH
         );
