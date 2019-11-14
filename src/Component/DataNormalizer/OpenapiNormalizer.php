@@ -12,10 +12,10 @@ use PhpSolution\SwaggerUIGen\Component\SchemaValidator\SwaggerValidator;
 class OpenapiNormalizer implements DataNormalizerInterface
 {
     private const PROPERTIES = [
-        'swagger',
-        'host',
-        'basePath',
+        'openapi',
+        'servers',
         'schemes',
+        'components',
         'consumes',
         'produces',
         'info',
