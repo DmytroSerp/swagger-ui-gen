@@ -12,7 +12,7 @@ class Components
     /**
      * @var \PhpSolution\SwaggerUIGen\Component\Model\Schema[]|array
      */
-    private $schemes = [];
+    private $schemas = [];
 
     /**
      * @return \PhpSolution\SwaggerUIGen\Component\Model\SecurityScheme[]|array
@@ -30,18 +30,18 @@ class Components
     /**
      * @return \PhpSolution\SwaggerUIGen\Component\Model\Schema[]|array
      */
-    public function getSchemes(): array
+    public function getSchemas(): array
     {
-        return $this->schemes;
+        return $this->schemas;
     }
 
-    public function setSchemes($schemes): void
+    public function setSchemas($schemas): void
     {
-        $this->schemes = $schemes;
+        $this->schemas = $schemas;
     }
 
-    public function addScheme(string $name, Schema $schema): void
+    public function addSchema(string $name, Schema $schema): void
     {
-        $this->schemes[$name] = $schema;
+        $this->schemas[$name] = $schema;
     }
 }

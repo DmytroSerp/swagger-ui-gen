@@ -112,7 +112,7 @@ class OpenAPI
             $this->components = new Components();
         }
 
-        $this->components->addScheme($name, $schema);
+        $this->components->addSchema($name, $schema);
     }
 
     /**

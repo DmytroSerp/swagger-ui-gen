@@ -49,8 +49,8 @@ class SwaggerModelExtractor
                 $config->setCollectionsProps(['servers', 'paths', 'parameters', 'responses', 'security', 'tags']);
             },
             Model\Components::class => static function(ObjectExtractConfig $config) {
-                $config->setProps(['securitySchemes', 'schemes']);
-                $config->setCollectionsProps(['securitySchemes', 'schemes']);
+                $config->setProps(['securitySchemes', 'schemas']);
+                $config->setCollectionsProps(['securitySchemes', 'schemas']);
             },
             Model\Items::class => static function (ObjectExtractConfig $config) {
                 $config->setIgnoredProps(['extensionsFields']);
